@@ -13,7 +13,7 @@ public class DropdownPageTest extends BaseTestClass{
     BaseActionsClass baseActionsClass;
 
     @Test
-    public void testDropDownMenu() throws InterruptedException {
+    public void testDropDownMenu()  {
         dropdownPage = new DropdownPage(getDriver());
         baseActionsClass = new BaseActionsClass(getDriver());
 
@@ -23,9 +23,8 @@ public class DropdownPageTest extends BaseTestClass{
         baseActionsClass.click(DROP_DOWN_MENU);
         baseActionsClass.click(DROP_DOWN_ITEM);
 
-        Assert.assertEquals("","");
+       // Assert.assertEquals("","");
 
-        Thread.sleep(5000);
 
     }
 

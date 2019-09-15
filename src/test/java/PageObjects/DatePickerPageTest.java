@@ -10,7 +10,7 @@ public class DatePickerPageTest extends BaseTestClass{
     DatePickerPage datePickerPage;
 
     @Test
-    public void sendDatePickers() throws InterruptedException {
+    public void sendDatePickers() {
         actionsClass = new BaseActionsClass(getDriver());
         datePickerPage = new DatePickerPage(getDriver());
 
@@ -19,7 +19,6 @@ public class DatePickerPageTest extends BaseTestClass{
         actionsClass.sendText(DATEPICKER,"09/14/2019");
         actionsClass.returnKeys(DATEPICKER);
 
-        Thread.sleep(4000);
 
     }
 

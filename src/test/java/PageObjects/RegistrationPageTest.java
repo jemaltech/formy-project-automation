@@ -12,7 +12,7 @@ public class RegistrationPageTest extends BaseTestClass{
     RegistrationPage registrationPage;
 
     @Test
-    public void fillOutRegistrationForm() throws InterruptedException {
+    public void fillOutRegistrationForm() {
         baseActionsClass = new BaseActionsClass(getDriver());
         registrationPage = new RegistrationPage(getDriver());
 
@@ -25,9 +25,6 @@ public class RegistrationPageTest extends BaseTestClass{
         baseActionsClass.click(CHECK_BOX);
 
         baseActionsClass.click(OPTIONS);
-
-
-        Thread.sleep(5000);
 
         baseActionsClass.sendText(DATE_PICKER,"09/14/2019");
         baseActionsClass.returnKeys(DATE_PICKER);
